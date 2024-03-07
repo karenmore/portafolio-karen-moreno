@@ -1,0 +1,59 @@
+.perfil {
+    width: 450px; /* Ajusta el ancho de la imagen según tu preferencia */
+    height: auto; /* Para mantener la proporción */
+    margin-right: 4em; /* Espacio entre la imagen y el texto */
+    text-align: center;
+}
+
+.new {
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(229, 16, 236);
+}
+
+.contacto {
+    display: flex;
+    padding: 1.5em 12em;
+    gap: 3em;
+}
+
+.icon__contac {
+    transform: scale(2); /* Escala el tamaño de los iconos al 150% */
+}
+
+ul li {
+    list-style: none;
+}
+
+.perfil {
+    padding: 0 0.5em 1em 5em;
+    margin-top: 4em;
+    border-radius: 50%;
+    /*box-shadow: 0 0 0.5em #0003;*/
+    margin-left: -100%; /* Mueve la imagen fuera del contenedor a la izquierda */
+    animation: slide-in 1s forwards; /* Aplica la animación durante 1 segundo */
+    /*background-color: rgb(229, 16, 236);*/
+  }
+  
+  @keyframes slide-in {
+    to {
+      margin-left: 0; /* Mueve la imagen de vuelta al centro */
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .perfil {
+        width: 350px; /* Ajusta el ancho de la imagen según tu preferencia */
+        height: auto; /* Para mantener la proporción */
+        margin-right: 3em; /* Espacio entre la imagen y el texto */
+        text-align: center;
+    }
+
+    .new {
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: 700;
+    }
+  }

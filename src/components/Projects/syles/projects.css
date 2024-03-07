@@ -1,0 +1,117 @@
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 40%;
+  height: 460px;
+  margin-top: 5em;
+}
+
+.proyecto__title {
+  width: 100%;
+  height: 50px;
+  font-size: 2em;
+  font-weight: 700;
+  color: rgb(229, 16, 236);
+  font-family: 'Righteous';
+  margin: 0 0 15em 0;
+}
+
+.back {
+  padding: 0.7em;
+  margin-top: 3em;
+  font-size: 1em;
+}
+
+.netx {
+  padding: 0.7em;
+  margin-top: 3em;
+  font-size: 1em;
+}
+
+.slider {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100vh;
+    height: 110%;
+  }
+  
+.slider-wrapper {
+  padding: 0;
+  min-width: 100%; 
+  height: 50%;
+  display: flex;
+  transition: transform 1s ease;
+}
+  
+.slider-item {
+    min-width: 100%; 
+    height: 100%;
+}
+
+.slider-item .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.name {
+  padding: 0.2em 0.2em;
+  font-size: 1.5em;
+}
+
+.descip {
+  padding: 0.1em 0.1em;
+  width: 500px;
+}
+  
+.slider-item p {
+  font-size: 1em;
+  padding: 0.1em 0.3em;
+}
+
+.tecnolog span {
+  font-size: 1.5em;
+  color: rgb(229, 16, 236);
+}
+
+.link_repo {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  gap: 0.5em;
+  margin-top: 1.5em;
+
+}
+  
+.proyecto a{
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(229, 16, 236);
+  border-radius: 5%;
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.logo_git {
+  transform: scale(2); 
+  padding: 0 10em 1em;
+}
+
+@media screen and (max-width: 900px) {
+
+  .register__label textarea {
+   width: 397px;
+ }
+}
+ 
+ @media screen and (max-width: 800px) {
+  .container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 460px;
+    margin-top: 5em;
+  }
+}

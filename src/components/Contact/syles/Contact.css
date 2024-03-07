@@ -1,0 +1,77 @@
+.container__register1{
+  width: 60%;
+  margin-top: 5%;
+}
+
+.container__register {
+    width: 80%;
+    height: 470px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #f4f4f4;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+  
+.register__name {
+  font-size: 2.2em;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(229, 16, 236);
+  margin-bottom: 0.5em;
+  font-family: 'Righteous';
+}
+  
+.register__formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.2em;
+}
+  
+.register__label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.2em;
+}
+
+.register__label textarea {
+  width: 704px;
+  height: 200px;
+}
+  
+input, select, button {
+  padding: 10px;
+  margin-top: 0.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+  
+button {
+  background-color: rgb(229, 16, 236);
+  color: white;
+  border: none;
+}
+
+@media screen and (max-width: 900px) {
+
+   .register__label textarea {
+    width: 397px;
+  }
+}
+  
+  @media screen and (max-width: 800px) {
+    .register__name {
+      padding: 0 0 1em;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .skills__description {
+        font-size: 0.8em;
+     }
+
+     .register__label textarea {
+      width: 350px;
+    }
+}

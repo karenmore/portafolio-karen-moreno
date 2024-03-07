@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap; /* Envuelve los elementos cuando no hay suficiente espacio */
+  }
+  
+  .presentation {
+    flex: 0 0 30%; /* Ancho del 30% del contenedor sin crecer ni encoger */
+    margin-right: 15px; /* Margen derecho entre los elementos */
+  }
+  
+  .perfil {
+    flex: 0 0 50%; /* Ancho del 50% del contenedor sin crecer ni encoger */
+  }
+  
+  /* Media query para dispositivos más pequeños */
+  @media screen and (max-width: 800px) {
+    .presentation, .perfil {
+      flex: 0 0 100%; /* Ambos ocupan el 100% del contenedor en dispositivos más pequeños */
+      margin-right: 0; /* Elimina el margen entre los elementos */
+    }
+  }
+  

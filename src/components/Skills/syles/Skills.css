@@ -1,0 +1,99 @@
+.container__skills {
+    width: 80%;
+    margin-top: 6em;
+ }
+
+ .container__skills2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    margin-bottom: 1em;
+    height: 60vh;
+}
+
+.card1 {
+    width: 250px;
+    border-radius: 0.7em;
+    overflow: hidden;
+    margin: 0.2em;
+    /*background-color: aqua;*/
+    box-shadow: 0 0 3em #0003;
+    transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.card1:hover {
+    transform: matrix(1.1, 0, 0, 1.1, 10, 10);
+}
+
+.card1 .card {
+    margin: 0.3em 5em 0.3em;
+}
+
+.card1 .card {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card1 .skills__description {
+    width: 220px;
+    padding: 0.3em;
+} 
+
+.skills__description {
+    padding-right: 0.5em 0.5em;
+    text-align:initial;
+} 
+
+.skills__description p {
+    font-size: 0.98em;
+} 
+
+
+.card {
+    width: 80px; 
+    height: 65px;/*auto;*/
+    /*opacity: 0;
+    transition: opacity 1s;*/
+  
+}
+
+.skills__title {
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(229, 16, 236);
+    margin-bottom: 0.5em;
+    font-family: 'Righteous';
+}
+
+.skills__title2 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+    padding: 0 0 0 0.5em;
+}
+
+span {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+    .container__skills2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /*background-color: aqua;*/
+    }
+
+    .card {
+        width: 80px; 
+        justify-content: center;
+    }
+
+    .skills__description {
+        font-size: 0.8em;
+     } 
+
+}
