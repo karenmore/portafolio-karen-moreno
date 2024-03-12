@@ -60,7 +60,15 @@ const Projects = () => {
 
   //console.log(imagenes.imagenes)
   const imagenes = JSON.parse(data);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [imageness, setImagenes] = useState([]);
   const [imgSelected, setImgSelected] = useState(0);
+
+  useEffect(() => {
+    const imagesData = JSON.parse(data);
+    setImagenes(imagesData.imagenes);
+    setImagesLoaded(true);
+  }, []);
 
   const nextSlide = () => {
     setImgSelected((prevImg) => (prevImg === imagenes.imagenes.length - 1 ? 0 : prevImg + 1));
@@ -70,6 +78,7 @@ const Projects = () => {
     setImgSelected((prevImg) => (prevImg === 0 ? imagenes.imagenes.length - 1 : prevImg - 1));
   };
 
+
   useEffect(() => {
     const interval = setInterval(() => {
       setImgSelected((prevImg) => (prevImg === imagenes.imagenes.length - 1 ? 0 : prevImg + 1));
@@ -77,6 +86,10 @@ const Projects = () => {
 
     return () => clearInterval(interval);
   }, [imagenes.imagenes.length]);
+
+  if (!imagesLoaded) {
+    return <div>Cargando imágenes...</div>;
+  }
 
   return (
     <>
