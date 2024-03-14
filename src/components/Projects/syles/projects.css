@@ -110,8 +110,42 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: 460px;
-    margin-top: 5em;
+    width: 95%;
+    height: 450px;
+    min-height: auto;
+    /*margin-top: 0.5em;*/
+    margin-bottom: 10em;
+  }
+
+  .descip {
+    padding: 0.1em 0.1em;
+    width: 350px;
+    font-size: 0.8em;
+  }
+
+  .tecnolog span {
+    font-size: 1em;
+    color: rgb(229, 16, 236);
+  }
+  
+  .link_repo {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    gap: 0.5em;
+    margin-top: 4em;
+  
+  }
+  .proyecto a{
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(229, 16, 236);
+    border-radius: 5%;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 500px;
+  }
+  .title {
+    height: 1em;
   }
 }

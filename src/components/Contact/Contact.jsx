@@ -16,9 +16,11 @@ const Contact = () => {
                     <label className='register__label'>
                         <input type="email" placeholder='Email' />
                     </label>
-                    <label className='register__label'>
-                        <textarea name="comentario"></textarea>
-                    </label>
+
+                        <textarea className='texarea'
+                        placeholder='Comentario'
+                        ></textarea>
+
                     <button>Enviar</button>
                 </form>
             </div>

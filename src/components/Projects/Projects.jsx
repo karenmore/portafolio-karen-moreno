@@ -8,7 +8,7 @@ const Projects = () => {
         "imagenes": [
           {
             "nombre": "Galleta De La Fortuna",
-            "url": "https://galleta-fortuna-op0u.onrender.com",
+            "despliegue": "https://galleta-fortuna-op0u.onrender.com",
             "imagen": "/galleta.png",
             "description": "Aplcacion Web para ver frases de forma aleatorias",
             "tecnologias": "React, Css",
@@ -17,7 +17,7 @@ const Projects = () => {
           },
           {
             "nombre": "Proyecto del Clima",
-            "url": "https://climate-project.onrender.com",
+            "despliegue": "https://climate-project.onrender.com",
             "imagen": "/clima.png",
             "description": "Aplicacion Web para obtener informacion del clima de tu ubicacion o de otras ciudades, usando el consumo de API",
             "tecnologias": "React, Css, Api",
@@ -26,7 +26,7 @@ const Projects = () => {
           },
           {
             "nombre": "Rick And Morty",
-            "url": "https://rick-and-morty-9muz.onrender.com",
+            "despliegue": "https://rick-and-morty-9muz.onrender.com",
             "imagen": "/RickAndMorty.png",
             "description": "App Web con informacion de los personajes de la serie Rick And Morty, usando el consumo de API",
             "tecnologias": "React, Css, Api",
@@ -36,7 +36,7 @@ const Projects = () => {
           ,
           {
             "nombre": "Pokemon",
-            "url": "https://pokemon-cec6.onrender.com",
+            "despliegue": "https://pokemon-cec6.onrender.com",
             "imagen": "/pokemon.png",
             "description": "App Web con informacion detalleda de Pokeon, usando el consumo de API",
             "tecnologias": "React, Css, Api",
@@ -46,7 +46,7 @@ const Projects = () => {
           ,
           {
             "nombre": "Reserva de hotel",
-            "url": "https://app-hotels.onrender.com",
+            "despliegue": "https://app-hotels.onrender.com",
             "imagen": "/app.png",
             "description": "App Web para hacer reserva de habitaciones en hoteles, La base de datos y la API que estoy consumiendo la construí durante el bootcamp",
             "tecnologias": "React, Css, Api",
@@ -63,6 +63,7 @@ const Projects = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const [imageness, setImagenes] = useState([]);
   const [imgSelected, setImgSelected] = useState(0);
+
 
   useEffect(() => {
     const imagesData = JSON.parse(data);
@@ -91,10 +92,11 @@ const Projects = () => {
     return <div>Cargando imágenes...</div>;
   }
 
+
   return (
     <>
 
-        <div className='title'>
+      <div className='title'>
         <h2 className='proyecto__title'>Proyectos</h2>
       </div>
       <div className='container1'>
@@ -116,7 +118,7 @@ const Projects = () => {
                     <a href={imagen.repositorio} target="_blank"><box-icon name='github' type='logo'></box-icon></a>
                   </div>
                   <div className='proyecto'>
-                    <a href={imagen.url} target='_blank' rel='noreferrer'>Ver proyecto</a>
+                    <a href={imagen.despliegue} target="_blank">Ir al enlace</a>
                   </div>
                 </div>
               </div>

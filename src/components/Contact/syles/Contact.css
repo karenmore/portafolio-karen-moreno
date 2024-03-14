@@ -28,6 +28,15 @@
   justify-content: space-between;
   gap: 0.2em;
 }
+
+.texarea {
+  border-width: 2px;
+  width: 100%;
+  height: 200px;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+/*className='border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md'*/
   
 .register__label {
   display: flex;
@@ -35,10 +44,10 @@
   margin-bottom: 0.2em;
 }
 
-.register__label textarea {
+/*.register__label textarea {
   width: 704px;
   height: 200px;
-}
+}*/
   
 input, select, button {
   padding: 10px;

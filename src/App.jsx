@@ -17,7 +17,7 @@ function App() {
     <ThemeProvider>
       <ThemeContext.Consumer>
       {({ darkMode }) => (
-          <div className={`dark-mode ${darkMode ? 'light-mode' : 'dark-mode'}`}>
+          <div className={`dark-mode ${darkMode ? 'light-mode' : 'dark-mode'} mobile-background`}>
             <HeaderShared/>
             <Routes>
               <Route path='/' element={<HomePage/>} />
