@@ -46,12 +46,12 @@ const Projects = () => {
           ,
           {
             "nombre": "Reserva de hotel",
-            "despliegue": "https://app-hotels.onrender.com",
+            "despliegue": "https://booking-app-frontend-n3v2.onrender.com/",
             "imagen": "/app.png",
             "description": "App Web para hacer reserva de habitaciones en hoteles, La base de datos y la API que estoy consumiendo la construí durante el bootcamp",
             "tecnologias": "React, Css, Api",
             "id": 5,
-            "repositorio": "https://github.com/karenmore/app.git"
+            "repositorio": "https://github.com/karenmore/booking-app-frontend.git"
           }
         ]
       }`

@@ -67,7 +67,95 @@
 }
 
 /* SECCION RESPONSIVE */
-@media screen and (max-width:800px){
+/*@media screen and (max-width:800px){*/
+@media (max-width: 1200px) {
+    .nav-responsive{
+        display: block;
+        
+    }
+
+    .nav-responsive .bnt__menu{
+        display: block;
+        
+    }
+
+    .responsive {
+        float: right;
+        font-size: 0.3em;
+    }
+
+    .nav{
+        display: none;
+    }
+ 
+    .nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 10em;
+        background-color: rgb(229, 16, 236);
+        width: 150px;
+    }
+    .nav.responsive ul{
+        display: block !important;
+    }
+    .nav.responsive ul li{
+        border-bottom: 2px solid #fff;
+        padding: 1.5em 0;
+        font-size: 1.5em;
+    }
+
+    .contenedor-header header nav ul li a:hover{
+        /*color: rgb(229, 16, 236);*/
+        color: #000;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-responsive{
+        display: block;
+        
+    }
+
+    .nav-responsive .bnt__menu{
+        display: block;
+        
+    }
+
+    .responsive {
+        float: right;
+        font-size: 0.3em;
+    }
+
+    .nav{
+        display: none;
+    }
+ 
+    .nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 10em;
+        background-color: rgb(229, 16, 236);
+        width: 150px;
+    }
+    .nav.responsive ul{
+        display: block !important;
+    }
+    .nav.responsive ul li{
+        border-bottom: 2px solid #fff;
+        padding: 1.5em 0;
+        font-size: 1.5em;
+    }
+
+    .contenedor-header header nav ul li a:hover{
+        /*color: rgb(229, 16, 236);*/
+        color: #000;
+    }
+}
+
+
+@media (max-width: 600px) {
     .nav-responsive{
         display: block;
         

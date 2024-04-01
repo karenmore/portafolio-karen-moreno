@@ -46,10 +46,14 @@ const HeaderShared = () => {
                     <li><Link to="/education">Education</Link></li>
                     <li><Link to="/contacto">Contacto</Link></li>
                     <div className='fondo'>
+                    <li>
                     <a className="icon icon_mode" onClick={toggleDarkMode}>
                                 <ion-icon name={darkMode ? 'moon-sharp' : 'sunny-sharp'}></ion-icon>
                     </a>
+                    </li>
+                    <li>
                     <a className="icon icon_cv" href="/Kmoreno_CV.pdf" download="Kmoreno_CV.pdf"><ion-icon name="document-text-sharp"></ion-icon></a>
+                    </li>
                     </div>
                 </ul>
             </nav>

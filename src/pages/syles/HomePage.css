@@ -13,6 +13,8 @@
   .perfil {
     flex: 0 0 50%; /* Ancho del 50% del contenedor sin crecer ni encoger */
   }
+
+  
   
   /* Media query para dispositivos más pequeños */
   @media screen and (max-width: 800px) {
