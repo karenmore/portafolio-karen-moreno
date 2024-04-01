@@ -38,6 +38,7 @@
     border-right: 2px solid #272e25;
 }*/
 
+
 .derecha h3{
     margin: 0 0.7em;
 }
@@ -74,6 +75,56 @@
     border-left: 2px solid rgb(229, 16, 236);
     margin-left: 1em;
 }
+
+/*@media screen and (max-width: 800px) {
+
+.fila {
+    margin-top: 7em;
+}
+}*/
+
+@media (max-width: 1200px) {
+    .fila {
+        margin-top: 1em;
+    }
+}
+@media (max-width: 900px) {
+    .fila {
+        margin-top: 2em;
+    }
+}
+@media (max-width: 600px) {
+    .fila {
+        margin-top: 3em;
+    }
+}
+
+/*
+  @media (max-width: 1200px) {
+    .otherHotel__container__card {
+      margin-left: 8vw;
+      margin-right: 6vw;
+      
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .otherHotel__container__card {
+      margin-left: 8vw;
+      margin-right: 8vw;
+      
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .otherHotel__container__card {
+      margin-left: 0.5vw;
+      margin-right: -1vw;
+      overflow-x: none;
+      
+    }
+  
+  }  */
 /*.curriculum .fila .item .conectori{
     height: 2px;
     background-color: #1CB698;

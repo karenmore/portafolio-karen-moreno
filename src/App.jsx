@@ -8,6 +8,8 @@ import SkillsPage from './pages/SkillsPage'
 import ProjectsPage from './pages/ProjectsPage'
 import EducationPage from './pages/EducationPage'
 import ContactoPage from './pages/ContactoPage'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   
@@ -26,6 +28,7 @@ function App() {
               <Route path='/education' element={<EducationPage/>} />
               <Route path='/contacto' element={<ContactoPage/>} />
             </Routes>
+            <ToastContainer />
           </div>
         )}
       </ThemeContext.Consumer>

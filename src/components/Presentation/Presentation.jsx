@@ -12,8 +12,8 @@ const Presentation = () => {
             <div>
                 <p className='new'>Desarrolladora Web Full Stack</p>
                 <ul className="contacto">
-                    <li className="icon__contac"><box-icon name='linkedin-square' type='logo' ></box-icon></li>
-                    <li className="icon__contac"><box-icon name='whatsapp-square' type='logo' ></box-icon></li>
+                <a href='www.linkedin.com/in/karen-moreno-morales' target="_blank"><li className="icon__contac"><box-icon name='linkedin-square' type='logo' ></box-icon></li></a>
+                <a href="https://wa.me/584141636906" target="_blank"><li className="icon__contac"><box-icon name='whatsapp-square' type='logo' ></box-icon></li></a>
                 </ul>
             </div>
         </div>
