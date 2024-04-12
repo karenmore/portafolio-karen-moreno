@@ -60,6 +60,19 @@ button {
   background-color: rgb(229, 16, 236);
   color: white;
   border: none;
+  width: 95%;
+  height: 44px;
+  margin: auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+button:hover {
+  background-color: rgb(229, 16, 236);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transform: scale(1.1); 
 }
 
 @media screen and (max-width: 900px) {

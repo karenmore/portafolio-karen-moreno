@@ -12,8 +12,21 @@ const Contact = () => {
     user_message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const sendEmail = (event) => {
     event.preventDefault();
+
+    if(isSubmitting){
+      return;
+    }
+
+    if (!formData.user_name || !formData.empresa || !formData.user_email || !formData.user_message) {
+      toast.error('Por favor, complete todos los campos');
+      return;
+    }
+
+    setIsSubmitting(true);
 
     emailjs.sendForm('service_m2ka8f6', 'template_ehy76ad', event.target, 'EQ87DH8m1j7RntxiJ')
       .then(response => {
@@ -29,7 +42,10 @@ const Contact = () => {
       .catch(error => {
         console.log(error);
         toast.error('Error al enviar el correo');
-      });
+      })
+      .finally(() =>{
+        setIsSubmitting(false)
+      })
   }
 
   const handleInputChange = (event) => {
@@ -74,7 +90,7 @@ const Contact = () => {
                         onChange={handleInputChange}
                         ></textarea>
 
-                    <button>Enviar</button>
+                    <button type='submit' disabled={isSubmitting}>  {isSubmitting ? 'Enviando...' : 'Enviar'}</button>
                 </form>
             </div>
             <ToastContainer />
