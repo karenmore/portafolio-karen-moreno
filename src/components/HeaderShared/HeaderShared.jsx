@@ -49,7 +49,7 @@ const HeaderShared = () => {
                 </a>
               </li>
               <li>
-                <a className="icon icon_cv" href="/Kmoreno_CV.pdf" download="Kmoreno_CV.pdf"><ion-icon name="document-text-sharp"></ion-icon></a>
+                <a className="icon icon_cv" href="/kmorenoCV.pdf" download="kmorenoCV.pdf"><ion-icon name="document-text-sharp"></ion-icon></a>
               </li>
             </div>
           </ul>

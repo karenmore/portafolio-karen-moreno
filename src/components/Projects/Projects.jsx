@@ -49,7 +49,7 @@ const Projects = () => {
             "despliegue": "https://booking-app-frontend-n3v2.onrender.com/",
             "imagen": "/app.png",
             "description": "App Web para hacer reserva de habitaciones en hoteles, La base de datos y la API que estoy consumiendo la construí durante el bootcamp",
-            "tecnologias": "React, Css, Api",
+            "tecnologias": "React, Css, Api, Redux, Node js con express, Sequelize, PostgreSQL",
             "id": 5,
             "repositorio": "https://github.com/karenmore/booking-app-frontend.git"
           }
@@ -83,7 +83,7 @@ const Projects = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setImgSelected((prevImg) => (prevImg === imagenes.imagenes.length - 1 ? 0 : prevImg + 1));
-    }, 7000); // Cambia el tiempo en milisegundos según tus necesidades
+    }, 10000); // Cambia el tiempo en milisegundos según tus necesidades
 
     return () => clearInterval(interval);
   }, [imagenes.imagenes.length]);

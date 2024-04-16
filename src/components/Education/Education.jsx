@@ -2,6 +2,29 @@ import React from 'react'
 import './syles/Education.css'
 
 const Education = () => {
+
+    const certificado1 = '/certificate1.png';
+    const certificado2 = '/certificate2.png';
+    const certificado3 = '/certificate3.png';
+  
+    const descargarCertificados = () => {
+      // Lógica para descargar los certificados
+      const link1 = document.createElement('a');
+      link1.href = certificado1;
+      link1.download = 'certificate1.png';
+      link1.click();
+  
+      const link2 = document.createElement('a');
+      link2.href = certificado2;
+      link2.download = 'certificate2.png';
+      link2.click();
+  
+      const link3 = document.createElement('a');
+      link3.href = certificado3;
+      link3.download = 'certificate3.png';
+      link3.click();
+    };
+
   return (
     <div>
       
@@ -9,6 +32,9 @@ const Education = () => {
         <div className="contenido-seccion">
             <div>
             <h2 className='title'>Educacion y experiencia Laboral</h2>
+            <div>
+      <button className='certificados' onClick={descargarCertificados}>Descargar Certificados</button>
+    </div>
             </div>
             <div className="fila">
                 <div className="col izquierda">
